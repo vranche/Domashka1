@@ -1,33 +1,67 @@
-﻿Console.WriteLine("Задание 1. Вывести натуральный логарифм ");
-double x = Math.E;
-Console.WriteLine("E={0:F1}", x);
+﻿
+Console.WriteLine("\nЗадание 14. Вывести 2кг 13 17");
+Console.WriteLine("2kg");
+Console.WriteLine("13 17");
 
-Console.WriteLine("Задание 2. Вывести 50 и 10 ");
-Console.WriteLine(50);
-Console.WriteLine(10);
+Console.WriteLine("\n3адание 15. Вывести столбиком 4 рандомных числа");
+Random lmao = new Random();
+int a = lmao.Next();
+int b = lmao.Next();
+int c = lmao.Next();
+int d = lmao.Next();
+Console.WriteLine(a);
+Console.WriteLine(b);
+Console.WriteLine(c);
+Console.WriteLine(d);
 
-Console.WriteLine("Задание 3. Вывести 4 любых числа в столбик");
-Console.WriteLine("Введите 4 числа:");
-string input = Console.ReadLine();
-string[] output = input.Split(' ');
-foreach (var a in output)
+Console.WriteLine("\nZadanieeeeeeee 16. Найти корни квадратного уравнения");
+Console.WriteLine("Task 15 (Введите a:)");
+float a_16 = float.Parse(Console.ReadLine());
+Console.WriteLine("Task 15 (Введите b:)");
+float b_16 = float.Parse(Console.ReadLine());
+Console.WriteLine("Task 15 (Введите c:)");
+float c_16 = float.Parse(Console.ReadLine());
+if ((b_16 * b_16 - 4 * a_16 * c_16) > 0)
 {
-    Console.WriteLine(a);
+    Console.WriteLine($"x_1 = {(-b_16 + Math.Sqrt(b_16 * b_16 - 4 * a_16 * c_16)) / (2 * a_16)}");
+    Console.WriteLine($"x_1 = {(-b_16 - Math.Sqrt(b_16 * b_16 - 4 * a_16 * c_16)) / (2 * a_16)}");
+}
+if (b_16 * b_16 - 4 * a_16 * c_16 == 0)
+{
+    Console.WriteLine($" x = {(-b_16 + Math.Sqrt(b_16 * b_16 - 4 * a_16 * c_16)) / (2 * a_16)}");
+}
+if (b_16 * b_16 - 4 * a_16 * c_16 < 0)
+{
+    Console.WriteLine("Prostite дядя или тётя таково нет");
 }
 
-Console.WriteLine("Задание 4. Вывести number+10");
-Console.WriteLine("Введите число:");
-int number = int.Parse(Console.ReadLine()); //перевод из строки в инт
-Console.WriteLine(number + 10);
 
-Console.WriteLine("Задание 5. Найти периметр квадрата");
-Console.WriteLine("Введите сторону квадрата:");
-int side = int.Parse(Console.ReadLine());
-Console.WriteLine("Периметр квадрата: " + side * 4);
+Console.WriteLine("\nЗадание 17. Среднее геом и арифм");
+Console.WriteLine("Введите первое число:");
+float num_1 = float.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число:");
+float num_2 = float.Parse(Console.ReadLine());
+Console.WriteLine($"Cр. арифм = {(num_1 + num_2) / 2}");
+Console.WriteLine($"Cр. геом = {Math.Sqrt(num_1 * num_2)}");
 
-Console.WriteLine("Задание 6. Длина и площадь круга");
-Console.WriteLine("Введите радиус круга:");
-int radius = int.Parse(Console.ReadLine());
-double pi = Math.PI; // число пи
-Console.WriteLine("Длина окружности: " + Math.Round(2 * pi * radius));
-Console.WriteLine("Плоащадь окружности: " + Math.Round(pi * radius * radius));
+// AB = √(xb - xa)2 + (yb - ya)2
+Console.WriteLine("\nЗадание 18. ot x1y1 do x2y2:");
+Console.WriteLine("x1:");
+float x_1 = float.Parse(Console.ReadLine());
+Console.WriteLine("y1:");
+float y_1 = float.Parse(Console.ReadLine());
+Console.WriteLine("x2:");
+float x_2 = float.Parse(Console.ReadLine());
+Console.WriteLine("y2:");
+float y_2 = float.Parse(Console.ReadLine());
+Console.WriteLine($"skol`ko rasstoyaniye: {Math.Sqrt((x_2 - x_1) * (x_2 - x_1) + (y_2 - y_1) * (y_2 - y_1))}");
+
+Console.WriteLine("\nЗадание 19. Смена 3 чисел:");
+Console.WriteLine("");
+
+
+Console.WriteLine("\nЗадание 20. Прошло н секунд было два козла сколько:");
+Console.WriteLine("Сколько прошло секунд:");
+float seconds = float.Parse(Console.ReadLine());
+Console.WriteLine($"Days: {seconds / 3600}");
+Console.WriteLine($"From the beginning of the hour: {seconds / 3600}");
